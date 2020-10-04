@@ -2,3 +2,89 @@ mixin icon(name,mod)
 	- mod = mod || ''
 	svg(class="icon icon-" + name + ' ' + mod)
 		use(xlink:href="static/img/svg/symbol/sprite.svg#" + name)
+
+mixin communityCardColumn(type, stats)
+	- var socialName = type
+	- socialName+= '-'
+	.commnity-card-pop-stats-column(class="commnity-card-pop-stats-column--"+type)
+		.commnity-card-pop-stats-column_head
+			img(src="static/general/"+socialName+"icon.svg", alt=socialName+"icon")
+		.community-card-pop-stats-rows
+			p.community-card-pop-stats_row= stats.subs
+				span k
+			p.community-card-pop-stats_row= stats.sex
+			p.community-card-pop-stats_row= stats.age
+
+
+mixin communityCard(card, ...columns)
+	.community-card
+		img.community-card_img(src="static/img/content/4-belarus/"+card.img+"-normal.webp", alt=card.name)
+
+		h3.community-card_name= card.name
+
+		p.community-card_subs
+			span.community-card_subs-count= card.ig.subs + card.tg.subs + card.vk.subs
+			span k подписчиков
+
+		button.community-card_btn(type="button" data-community-id=card.section+"-"+card.id) Подробнее
+
+		img.community-card_bg(src="static/img/content/4-belarus/"+card.img+"-normal.webp", alt=card.name)
+
+		.community-card-pop_wrap(class="pop-"+card.section+"-"+card.id)
+			.container
+				.community-card-pop
+					button.pop-close-btn(type="button" data-community-id=card.section+"-"+card.id) X
+
+					h3.community-card-pop_title= card.name
+					.community-card-pop-content
+						.community-card-pop-stats
+							.community-card-pop-stats-column.community-card-pop-stats-head
+								.commnity-card-pop-stats-column_head
+									img.community-card-pop-stats-head_pic(src="static/img/content/4-belarus/"+card.img+"-normal.webp", alt=card.name)
+								.community-card-pop-stats-head-rows
+									p.community-card-pop-stats-head_row Подписчики
+									p.community-card-pop-stats-head_row Пол, М/Ж
+									p.community-card-pop-stats-head_row Возраст
+							if (card.ig.subs)
+								+communityCardColumn('ig',{
+									subs: card.ig.subs,
+									sex: card.ig.sex,
+									age: card.ig.age,
+								})
+							if (card.tg.subs)
+								+communityCardColumn('tg',{
+									subs: card.tg.subs,
+									sex: card.tg.sex,
+									age: card.tg.age,
+								})
+							if (card.vk.subs)
+								+communityCardColumn('vk',{
+									subs: card.vk.subs,
+									sex: card.vk.sex,
+									age: card.vk.age,
+								})
+						p.community-card-pop-descr= card.descr
+					.community-card-pop-btns
+						button.g-btn-prim(type="button" data-community-source=card.name) Заказать рекламу
+						a(href=card.link).g-btn-secondary Перейти в группу
+
+
+
+
+
+
+
+
+
+
+mixin form()
+	.section-form
+		h3.section-form_title Оставьте любые удобные контакты и получите бесплатный анализ соцсетей
+		form.section-form-inputs
+			input.g-form_input(type="text" name="name" placeholder="Имя" requieerd)
+			input.g-form_input(type="text" name="contact" placeholder="Телефон/@никнейм/почта" requieerd)
+			.section-form-buttons
+				button.g-btn-prim Получить анализ
+				button.g-btn-secondary Прайс на рекламу
+		p.gdpr Нажимая кнопку «Получить анализ», я даю согласие на передачу персональных данных согласно
+			a.gdpr(href="#") политике конфиденциальности.

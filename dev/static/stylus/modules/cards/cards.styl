@@ -1,0 +1,37 @@
+.cards-content
+	display flex
+	justify-content space-between
+	gap: s1
+	margin-bottom 150px
+
+.card
+	position relative
+	display flex
+	justify-content center
+	flex-direction column
+	align-items center
+
+	width 35%
+	padding 58px 0
+
+	border-radius 24px
+	background-color c-surface
+	transition all 0.3s ease-in
+	cardShade()
+	text-align center
+
+	&:hover
+		background-color c-prim
+		color c-f--on-content
+		trans()
+.card_title
+	font-weight 900
+.card_text
+	max-width 238px
+
+.big_title
+	color c-f
+	font-size f-section-title
+	font-weight 900
+	text-align center
+	margin-bottom 80px

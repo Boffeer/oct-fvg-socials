@@ -1,0 +1,167 @@
+.community-card
+	position relative
+	display flex
+	flex-direction column
+	max-width 340px
+	padding-top 26px
+	background: #FFFFFF;
+	border-radius: 24px;
+	cardOuterShade()
+
+.community-card:hover .community-card_bg
+	opacity 1
+	trans()
+
+.community-card:hover .community-card_name
+	color: c-f--on-content
+	trans()
+.community-card:hover .community-card_subs
+	color: c-f--on-content
+	trans()
+
+.community-card_img
+	margin-bottom 17px
+
+.community-card_name
+	position relative
+	font-size f-regular
+	font-weight 600
+	text-align center
+	z-index 1
+	margin-bottom 4px
+	trans()
+
+.community-card_subs
+	position relative
+	font-size f-regular
+	text-align center
+	z-index 1
+	margin-bottom 21px
+	trans()
+
+.community-card_btn
+	position relative
+	font-weight 600
+	border none
+	border-radius 24px
+	padding 1.1rem 0
+	trans()
+	cardBtnShade()
+	z-index 1
+	&:hover
+		trans()
+		buttonGrad()
+		color c-f--on-content
+
+.community-card_bg
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	trans()
+	z-index 0
+	opacity 0
+
+
+
+
+
+
+.community-card-pop_wrap
+	display flex
+	justify-content center
+	align-items center
+	display none
+	position fixed
+	z-index 1000
+	top 0
+	left 0
+	width 100vw
+	height 100vh
+	background-color #fff
+
+.community-card-pop
+	position relative
+	padding 45px 61px 64px
+	border-radius 24px
+	cardOuterShade()
+	line-height 2
+
+.community-card-pop_title
+	text-align center
+	font-size f-subtitle
+	font-weight 900
+	margin-bottom 40px
+
+.community-card-pop-content
+	display flex
+	justify-content space-between
+	gap 32px
+	margin-bottom s1
+
+.commnity-card-pop-stats-column_head
+	margin-right s1
+	max-width 117px
+.commnity-card-pop-stats-column
+	max-width 117px
+.community-card-pop-stats
+	display flex
+	justify-content space-between
+
+.commnity-card-pop-stats-column_head
+.community-card-pop-stats-head_pic
+	width 100%
+	min-height 104px
+	max-height 117px
+	border-radius 24px
+	margin-bottom 16px
+.community-card-pop-stats-head-rows
+	display flex
+	flex-direction column
+	align-items start
+	text-align right
+// .community-card-pop-stats_row
+.community-card-pop-stats-head_row
+	font-size f-regular
+	width 80%
+
+.commnity-card-pop-stats-column
+	border-radius 24px
+	padding-bottom 0.6rem
+	color c-f--on-content
+.commnity-card-pop-stats-column--vk
+	background-color c-vk--d
+	.commnity-card-pop-stats-column_head
+		vkGrad()
+.commnity-card-pop-stats-column--tg
+	background-color c-tg--d
+	.commnity-card-pop-stats-column_head
+		tgGrad()
+.commnity-card-pop-stats-column--ig
+	background-color c-ig--d
+	.commnity-card-pop-stats-column_head
+		igGrad()
+
+.community-card-pop-stats-rows
+	text-align center
+
+.community-card-pop-descr
+	max-width 402px
+
+.community-card-pop-btns
+	display flex
+	justify-content center
+	gap 28px
+
+
+
+
+
+// =========
+// Form
+// =========
+
+.section-form
+	background-color c-surface
+	cardOuterShade()

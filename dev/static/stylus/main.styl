@@ -12,14 +12,15 @@ img
 html
 	font-size f-regular
 	overflow-x hidden
-	
+	background-color c-bg
+	color c-f
+	line-height 1.8
+
 body
 	font-family mainFont
 	// height 100%
-	// background-color clr-bg--d
-	// color clr-f
 	// overflow-x hidden
-	
+
 h1,h2,h3,h4,h5,h6
 	margin 0
 
@@ -30,7 +31,6 @@ ul,li
 
 p
 	margin 0
-	line-height 2
 a
 	color black
 	text-decoration none
@@ -48,7 +48,10 @@ textarea
 
 section
 	position relative
-
+.section_title
+	margin-bottom 77px
+	font-weight 900
+	font-size f-title
 input,
 select,
 button
@@ -64,14 +67,16 @@ button
 
 .content
 	flex 1 0 auto
-	
+
 .container
 	max-width 1260px
 	margin 0 auto
 	// overflow-x hidden
 	// overflow-x hidden
+@media (min-width 1600px)
+	.container
+		max-width 1440px
 
-	
 
 button
 	cursor pointer

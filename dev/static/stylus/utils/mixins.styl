@@ -40,11 +40,71 @@ size(a, b = false)
 		height b
 	else
 		height a
-		
+
 
 
 bg($path, $type = cover)
 	background-image: url('../img/content/#{$path}.webp');
 	background-size: $type
-	
 
+
+
+// ====================
+// gradients
+// ====================
+
+primaryGrad()
+	background: linear-gradient(180deg, #FFFFFF 0%, #808080 100%), #FF2626;
+	background-blend-mode: overlay, normal;
+buttonGrad()
+	background: linear-gradient(180deg, #FFFFFF 0%, #808080 100%), #FF2626;
+	background-blend-mode: overlay, normal;
+vkGrad()
+	background: linear-gradient(223.83deg, rgba(255, 255, 255, 0.3456) 7.39%, rgba(44, 44, 44, 0) 91.13%), #4986CC;
+	background-blend-mode: overlay, normal;
+vkGradTop()
+	background: linear-gradient(223.83deg, rgba(255, 255, 255, 0.3456) 7.39%, rgba(44, 44, 44, 0) 91.13%), #5297E6;
+	background-blend-mode: overlay, normal;
+
+tgGrad()
+	background: linear-gradient(224.78deg, rgba(255, 255, 255, 0.4) 7%, rgba(119, 119, 119, 0) 94.47%), #0088CC;
+	background-blend-mode: overlay, normal;
+tgGradTop()
+	background: linear-gradient(224.78deg, rgba(255, 255, 255, 0.4) 7%, rgba(119, 119, 119, 0) 94.47%), #0099E6;
+	background-blend-mode: overlay, normal;
+
+igGrad()
+	background: #d6249f;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+igGradTop()
+	background: #d6249f;
+	background: linear-gradient(225deg, #FFFFFF 0%, #363636 100%), radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	background-blend-mode: overlay, normal;
+
+ytGrad()
+	background: linear-gradient(225deg, #FFFFFF 0%, #363636 100%), #F52525;
+	background-blend-mode: overlay, normal;
+ytGradTop()
+	background: linear-gradient(225deg, #FFFFFF 0%, #363636 100%), #FF2626;
+	background-blend-mode: overlay, normal;
+
+
+
+trans()
+	transition all 0.3s ease-in
+
+// ===============
+// Shadows
+// ===============
+
+cardOuterShade()
+	box-shadow: 0px 27px 232px rgba(0, 0, 0, 0.019285), 0px 13.7591px 96.9241px rgba(0, 0, 0, 0.0274522), 0px 7.42928px 51.8202px rgba(0, 0, 0, 0.0338338), 0px 3.23623px 29.05px rgba(0, 0, 0, 0.08), 0px 0.523344px 15.4282px rgba(0, 0, 0, 0.08), 0px -0.746712px 6.42003px rgba(0, 0, 0, 0.14);
+
+cardShade()
+	box-shadow: 0px 27px 232px rgba(0, 0, 0, 0.019285), 0px 13.7591px 96.9241px rgba(0, 0, 0, 0.0274522), 0px 7.42928px 51.8202px rgba(0, 0, 0, 0.0338338), 0px 3.23623px 29.05px rgba(0, 0, 0, 0.08), 0px 0.523344px 15.4282px rgba(0, 0, 0, 0.08), 0px -0.746712px 6.42003px rgba(0, 0, 0, 0.14);
+
+buttonShade()
+	box-shadow: 0px 7px 0px #B32433;
+
+cardBtnShade()
+	box-shadow: 0px -89px 80px rgba(0, 0, 0, 0.19), 0px -11.1442px 10.0172px rgba(0, 0, 0, 0.065);
