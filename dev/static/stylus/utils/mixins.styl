@@ -76,6 +76,9 @@ tgGradTop()
 igGrad()
 	background: #d6249f;
 	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+igGradDarken()
+	background: #d6249f;
+	background: radial-gradient(circle at 30% 107%, darken(#fdf497, 30%) 0%, darken(#fdf497, 30%) 5%, darken(#fd5949, 30%) 45%,darken(#d6249f, 30%) 60%,darken(#285AEB, 30%) 90%);
 igGradTop()
 	background: #d6249f;
 	background: linear-gradient(225deg, #FFFFFF 0%, #363636 100%), radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
@@ -108,3 +111,17 @@ buttonShade()
 
 cardBtnShade()
 	box-shadow: 0px -89px 80px rgba(0, 0, 0, 0.19), 0px -11.1442px 10.0172px rgba(0, 0, 0, 0.065);
+
+
+// ===============
+// popups
+// ===============
+popup()
+	position fixed
+	top 0
+	left 0
+	width 100vw
+	height 100vh
+	justify-content center
+	align-items center
+	z-index 10000
