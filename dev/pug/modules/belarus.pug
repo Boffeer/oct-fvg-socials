@@ -1,7 +1,8 @@
 section.belarus
-	.container
-		h2.section_title 1. Ох уж эта Беларусь
 	.belarus_cover
+		.section-title-wrap
+			h2.section_title 1. Ох уж эта Беларусь
+			.section-title_blur
 	.container
 		.belarus-content
 
@@ -58,7 +59,7 @@ section.belarus
 			+communityCard(
 				{
 					id: '3',
-					img: 'belarus-news',
+					img: 'belarus',
 					name: 'Ох уж эта Беларусь',
 					section: 'belarus',
 					descr: 'Информационное сообщество, которое вещает аудитории главные события Беларуси: праздники, происшествия, новинки кино, выставки, концерты, акции, розыгрыши, погоду, спортивные мероприятия. За этой группой следят все, кто хочет знать о главных событиях страны.',
@@ -159,7 +160,7 @@ section.belarus
 			+communityCard(
 				{
 					id: '7',
-					img: 'flats',
+					img: 'flat',
 					name: 'Вписки/Флеты Минск',
 					section: 'belarus',
 					descr: 'Нужно собрать большую компанию для тусовки? Найти единомышленников по празднику? Провести вечер в женской/мужской компании? — В этом сообществе люди могут удовлетворить именно такие запросы.',
@@ -183,7 +184,7 @@ section.belarus
 
 			+communityCard(
 				{
-					img: 'give-away',
+					img: 'giveaway',
 					name: 'Отдам даром',
 					section: 'belarus',
 					id: '8',
@@ -211,7 +212,7 @@ section.belarus
 					img: 'motor',
 					name: 'Мото Барахолка',
 					section: 'belarus',
-					id: '8',
+					id: '9',
 					descr: 'Продажа/покупка/обмен подержанных мотоциклов в Вконтакте возможна благодаря Moto BY. В подписчиках этой группы находятся как потенциальные покупатели, так и продавцы.',
 					link: 'https://vk.com/moto_ohbelarus',
 					ig:{
@@ -259,7 +260,7 @@ section.belarus
 					img: 'wheels',
 					name: 'Купить/Продать Диски',
 					section: 'belarus',
-					id: '8',
+					id: '10',
 					descr: 'Продажа/покупка/обмен подержанных дисков для автомобилей в Вконтакте возможна благодаря Diski BY. В подписчиках этой группы находятся как потенциальные покупатели, так и продавцы.',
 					link: 'https://vk.com/autodiski_ohbelarus',
 					ig:{
@@ -283,7 +284,7 @@ section.belarus
 					img: 'work',
 					name: 'Найти работу',
 					section: 'belarus',
-					id: '8',
+					id: '11',
 					descr: 'Публикация объявлений о работе/подработках в Минске через администратора. Поэтому здесь нет спама, только отобранные вакансии и ждущие своей работы подписчики.',
 					link: 'https://vk.com/rabota_ohbelarus',
 					ig:{
@@ -304,11 +305,11 @@ section.belarus
 				})
 			+communityCard(
 				{
-					img: 'work',
+					img: 'model',
 					name: 'Ищу модель',
 					section: 'belarus',
-					id: '8',
-					descr: 'В группе бесплатно публикуются объявления о съеме/сдаче жилья.Предложения от риэлторов или агентств не публикуются, администратор следит за флудом/оскорблениями, поэтому адуитория здесь лояльная.',
+					id: '12',
+					descr: '.',
 					link: 'https://vk.com/model_ohbelarus ',
 					ig:{
 						subs: 100,
@@ -326,7 +327,7 @@ section.belarus
 						age: '20-40',
 					},
 				})
-		button.show-more-btn.g-btn-secondary(data-section-name="belarus") Показать еще группы
+		//- button.show-more-btn.g-btn-secondary(data-section-name="belarus") Показать еще группы
 		#belarus
 		+form('belarus')
 

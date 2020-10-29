@@ -6,16 +6,20 @@
 	margin-bottom 60px
 	background-size cover
 	background-position center center
-	background-image url(../img/football-bg-normal.webp)
+	background-image url(../img/content/football-bg.png)
 	display flex
 	align-items flex-start
 	flex-direction column
 	justify-content flex-end
-	padding-left 250px
-	padding-bottom 50px
+	border-radius 26px
 .football-content
 	display flex
 	justify-content space-around
 	flex-wrap wrap
 	gap	26px
 	margin-bottom 40px
+
+@media (max-width: 480px)
+	.football_cover .section-title-wrap {
+		max-width: 90%;
+	}

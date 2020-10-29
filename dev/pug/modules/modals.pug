@@ -1,9 +1,12 @@
-.pop-callback_wrap
-	form(action="static/php/contact.php").pop-callback
+.pop-callback_wrap.pop
+	form.pop-callback
 		button.pop-close-btn(type="button" data-close="pop-callback_wrap") X
 		h2.pop_title Оставьте номер телефона и мы вам перезвоним
+		input.g-form-name(type="text" name="formname" value="callback")
 		input(
+			name="tel"
 			type="tel"
+			required
 			autocorrect="off"
 			autocomplete="tel"
 			placeholder="Телефон"
@@ -13,59 +16,62 @@
 //- ===============
 //- Pricing
 //- ===============
-.pop-pricing_wrap
+.pop-pricing_wrap.pop
 	.container
 		.pop-pricing
 			button.pop-close-btn(type="button" data-close="pop-pricing_wrap") X
-			h2.pop_title Тарифы на рекламу в FADEEV-GROUP
+			h2.pop_title Тарифы на рекламу в FADEEV&#8209;GROUP
 			.pricing-list
 
-				.pricing-item
-					h3.pricing-item_title Стандарт
-					p.pricing-item_cost 175 рублей
-					ul.pricing-item-features
-						li.pricing-item_feature 16 публикаций
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
+				.pricing-item_wrap
+					.pricing-item
+						h3.pricing-item_title Стандарт
+						p.pricing-item_cost 175 рублей
+						ul.pricing-item-features
+							li.pricing-item_feature 16 публикаций
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
 
-				.pricing-item
-					h3.pricing-item_title Про
-					p.pricing-item_cost 300 рублей
-					ul.pricing-item-features
-						li.pricing-item_feature 16 публикаций
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
+				.pricing-item_wrap
+					.pricing-item
+						h3.pricing-item_title Про
+						p.pricing-item_cost 300 рублей
+						ul.pricing-item-features
+							li.pricing-item_feature 16 публикаций
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
 
-				.pricing-item
-					h3.pricing-item_title Абсолют
-					p.pricing-item_cost 900 рублей
-					ul.pricing-item-features
-						li.pricing-item_feature 16 публикаций
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
-						li.pricing-item_feature Аудитория 1 000 000+
+				.pricing-item_wrap
+					.pricing-item
+						h3.pricing-item_title Абсолют
+						p.pricing-item_cost 900 рублей
+						ul.pricing-item-features
+							li.pricing-item_feature 16 публикаций
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
+							li.pricing-item_feature Аудитория 1 000 000+
 
-			form(action="static/php/contact.php").pricing-item-form
+			form.pricing-item-form
 				h3.pop-pricing_title Закажите рекламу сейчас, оставив любой удобный контакт и получи бесплатный анализ соцсетей
 				.pricing-inputs
 					//- input(
@@ -73,6 +79,7 @@
 					//- 	name="name"
 					//- 	required
 					//- ).g-form_input
+					input.g-form-name(type="text" name="formname" value="pricing-form")
 					input(
 						placeholder="Телефон/Почта"
 						name="contact"

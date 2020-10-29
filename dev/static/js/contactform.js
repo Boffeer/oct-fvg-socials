@@ -1,15 +1,14 @@
 jQuery(document).ready(function ($) {
 
-	$(".callback-form").submit(function () {
+	$(".form").submit(function () {
 		var str = $(this).serialize();
-
+		$('.pop').fadeOut()
 		$.ajax({
 			type: "POST",
 			url: "static/php/callback.php",
 			data: str,
 			success: function ()
 			{
-				
 			}
 		}
 		);

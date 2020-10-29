@@ -7,7 +7,7 @@
 	background-size cover
 	background-position center center
 	background-size 150%
-	background-image url(../img/multitude-bg-normal.webp)
+	background-image url(../img/content/multitude-bg.png)
 	display flex
 	align-items flex-start
 	flex-direction column
@@ -23,3 +23,16 @@
 	flex-wrap wrap
 	gap	26px
 	margin-bottom 40px
+
+
+@media (max-width: 480px)
+	.multitude_cover{
+		background-size: cover;
+		background-position: 0 0;
+		height: 150px !important;
+	}
+
+	.multitude_cover .section-title-wrap{
+	display: none;
+	}
+
