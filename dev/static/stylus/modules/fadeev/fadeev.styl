@@ -7,7 +7,6 @@
 	background-size cover
 	background-position center 0
 	background-image url(../img/content/vlad-bg.jpg)
-	border-radius 32px
 	display flex
 	align-items flex-start
 	flex-direction column
@@ -24,17 +23,22 @@
 	gap	26px
 	margin-bottom 40px
 
+.fadeev_cover
+.multitude_cover
+.football_cover
+	height 600px
 @media (max-width 480px)
 	.fadeev_cover
-	.belarus_cover
 	.multitude_cover
 	.football_cover
-		height 280px
+		height 280px !important
 	.fadeev_cover
 	.multitude_cover
 	.football_cover
 		margin-top auto
-
+		border-radius: 0;
 	.fadeev_cover .section-title-wrap{
 		margin-top: auto;
+		width: 100%;
+		text-align: center;
 	}

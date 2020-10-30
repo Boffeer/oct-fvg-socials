@@ -17,6 +17,8 @@
 
 .heading-title
 	text-align center
+	font-weight 900
+	display block
 	color: #FFCCD1;
 	font-size 60px
 	position relative
@@ -27,39 +29,55 @@
 	position absolute
 	top: -340px;
 	left: -185px;
-.hero-cta-callback
-	opacity 0
-.hero-cta-callback:hover
-	font-weight: 900;
-	font-size: 53px;
-	line-height: 100%;
-	/* or 53px */
+.hero-cta{
+	background-color: transparent;
+	color: transparent;
+	text-align: center;
+	position: absolute;
+	font-size: 40px;
+	left: 0;
+	right: 0;
+	bottom: 14vh;
+}
 
+
+.hero-cta:hover
+	font-weight: 900;
+	cursor pointer
 
 	color: rgba(0, 0, 0, 0.01);
 
 	text-shadow: 0px 100px 329px rgba(217, 54, 33, 0.8), 0px 46.233px 152.107px rgba(217, 54, 33, 0.7), 0px 26.4535px 87.032px rgba(217, 54, 33, 0.6), 0px 16.0571px 52.8278px rgba(217, 54, 33, 0.6), 0px 9.67509px 31.8311px rgba(217, 54, 33, 0.4), 0px 5.38772px 17.7256px rgba(217, 54, 33, 0.190342), 0px 2.31722px 7.62366px rgba(217, 54, 33, 0.131746);
 
 .hero-call
-	opacity 0
-.hero-call:hover
-	font-weight: 900;
+	color transparent
+	position: absolute;
+	right: 7vw;
 	font-size: 53px;
+	font-weight: 900;
 	line-height: 100%;
+	letter-spacing: 0.06999em;
+.hero-call:hover
 	/* identical to box height, or 53px */
-
-	letter-spacing: 0.075em;
-
+	font-size: 53px;
 	color: rgba(0, 0, 0, 0.01);
 
 	text-shadow: 0px 27px 118px rgba(255, 169, 0, 0.46), 0px 11.28px 49.2976px rgba(255, 169, 0, 0.330673), 0px 6.0308px 26.3568px rgba(255, 169, 0, 0.274209), 0px 3.38082px 14.7754px rgba(255, 169, 0, 0.23), 0px 1.79553px 7.84712px rgba(255, 169, 0, 0.185791), 0px 0.747159px 3.26536px rgba(255, 169, 0, 0.129327);
 
 
+.hero .container{
+	position: relative;
+	height: 100%;
+}
+
+
+
+
 @media (max-width 480px)
 	.hero{
 		height: 45vh
-		background-position-x: -86px;
-		background-position-y: 0;
+	    background-position: center;
+		margin-bottom: -3px;
 	}
 	.heading-title{
 		line-height 1
@@ -67,6 +85,22 @@
 
 	.heading-title:before{
 		transform: scale(0.5)
-		top -240px
+		top: -220px;
+		left: -25%;
+		right: 15%;
 		font-size: 50px;
+	}
+
+	.first-grad{
+		margin-bottom: -3px;
+	}
+
+
+@media (min-width 1000px) and (max-width 1600px)
+	.hero{
+		background-position-y: -40px !important;
+	}
+	.hero-call, .hero-call:hover{
+		font-size: 35px;
+		right: 17vw;
 	}
