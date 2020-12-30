@@ -142,7 +142,7 @@ if ($(document).width() < 520) {
 
 
 
-    $('.footer-slider').slick({
+    $('.js-footer-slider').slick({
         centerMode: true,
         // centerPadding: '144px',
         slidesToShow: 1,

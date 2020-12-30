@@ -81,6 +81,7 @@
 	}
 	.heading-title{
 		line-height 1
+		font-size: 45px;
 	}
 
 	.heading-title:before{
@@ -95,10 +96,17 @@
 		margin-bottom: -3px;
 	}
 
+@media (max-width 360px)
+	.heading-title:before{
+		top: -240px;
+		left: -29%;
+	    right: 26%;
+	}
 
 @media (min-width 1000px) and (max-width 1600px)
 	.hero{
 		background-position-y: -40px !important;
+		height: 109vh;
 	}
 	.hero-call, .hero-call:hover{
 		font-size: 35px;

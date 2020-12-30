@@ -1,0 +1,22 @@
+.footer
+	.container
+		footer
+			.footer-logo_container
+				img.footer-logo(src="static/img/general/footer-logo.svg")
+				p.footer-logo_descriptor Сеть интернет сообществ
+			.footer-links
+				.footer-links-1
+					a(href="").footer_link +375 00 000 00 00
+					a(href="").footer_link hello@fadeevgroup.com
+					a(href="").footer_link УНП 000000000
+				.footer-links-2
+					a(href="").footer_link Политика конфиденциальности
+					a(href="").footer_link Отказ от ответственности
+			+socials({ 'class': 'footer-socials-icons',
+				'inst': 'https://instagram.com',
+				'vk': 'https://vk.com',
+				'fb': 'https://facebook.com',
+				'tg': 'https://telegram.org',
+				'whats': 'https://whatsapp.com',
+			})
+
